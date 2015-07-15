@@ -14,7 +14,7 @@ public class Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("my.jsp");
+		request.getRequestDispatcher("my.jsp").forward(request, response);;
 
 	}
 
